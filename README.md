@@ -21,19 +21,19 @@ I also have import.js setting on root directory to be use for batch import data.
 ### API
 
 - GET /image/:id
-  - To query a single item and passing data to ejs template
+  - To query a single item and passing data to ejs template. This is server side rendering.
   <br>
 - GET /gallery/id/:id
-  - Same as above but i am handling the the data on the front end.
+  - Same as above but i am handling the the data on the front end. This is rendering front end.
   <br>
 - GET /gallery/name/:name
   - I use this to query a title and it will return all title that contain the query string\<name>. 
 
 ---
-### links
-GH repo: []()
+### Live links
+GH repo: [https://github.com/nozky/cpnt262-a5](https://github.com/nozky/cpnt262-a5)
 
-Heroku Url: []()
+Heroku Url: [https://norvs-cpnt262-a5.herokuapp.com/](https://norvs-cpnt262-a5.herokuapp.com/)
 
 ---
 ### Author
