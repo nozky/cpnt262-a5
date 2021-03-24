@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/header') %>
+
+<body>
+
+  <div class="wrapper">
+    <h1><%= pageTitle %></h1>
+
+    <!-- seaarch box -->
+    <div class="search-box">
+      <label for="searchTxt">Search</label>
+      <input id="searchTxt" type="text">
+      <button id="searchBtn">Search</button>
+
+      <!-- <label for="searchOption">Search Option</label> -->
+      <select name="Option" id="searchOption">
+        <option value="all">Display All</option>
+        <option value="id">By Id</option>
+        <option value="name">By Name</option>
+      </select>
+    </div>
+
+    <div class="gallery">
+      <!-- Dynamic content here -->
+    </div>
+  
+  </div>
+
+</body>
+
+  <%- include('../partials/footer')  %>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/header') %>
+
+<body>
+
+  <div class="wrapper">
+    <h1><%= pageTitle %></h1>
+
+      <div  class="sr-content">
+        <section class="sr-info">
+          <h2>Information</h2>
+          <ul>
+            <li><%= data[0].id %></li>
+            <li><%= data[0].title %></li>
+            <li><%= data[0].description %></li>
+          </ul>
+        </section>
+  
+        <section class="sr-image">
+          <img src="<%= data[0].path_url %>" width="300px" alt="<%= data[0].title %>">
+        </section>
+    </div>
+
+      <div class="sr-review-comment">
+        <h2>Review and Comments</h>
+        
+        <div class="sr-rc-section">
+
+          <div class="sr-rc-item">
+            <% data[0].comment_review.forEach( (el) => { %>
+              <h3><%= el.username %>:</h3>
+              <p>-<%= el.comment %></p>
+            <% }) %> 
+          </div>
+        
+        </div>
+     
+      </div>
+
+    </div>
+
+    
+  
+  </div>
+
+</body>
+
+  <%- include('../partials/footer')  %>
+
+</html>
+

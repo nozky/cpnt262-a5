@@ -1,0 +1,32 @@
+
+.sr-content{
+  display: flex;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-top: 1px solid white ;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+.sr-info{
+  padding: 0.5rem;
+  width: 40%;
+}
+
+.sr-review-comment{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sr-review-comment h2{
+  font-size: clamp(18px, 3vw, 30px);
+  color: #ffffff;
+}
+
+.sr-rc-item{
+  margin: 0.5rem;
+  padding: 1rem;  
+  border: 0.1px solid white
+}
